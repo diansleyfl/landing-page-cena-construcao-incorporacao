@@ -126,19 +126,41 @@ section.cover-form {
     font-weight: normal;
 }
 
+.form-wraper:not(:first-child) {
+    margin-top: 30px;
+}
+
+.form-wraper:not(:last-child) {
+    margin-top: 20px;
+}
+
 .form-container form {
     margin-top: 8px;
+    padding: 15px;
 }
 
 .form-container form p {
-    font-size: 13px;
+    font-size: 14px;
     color: #525252;
 }
 
 .form-container form input[type=text] {
     width: 100%;
     border: 1px solid #ccc;
-    height: 30px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033C50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 0;
 }
 
 /* 
