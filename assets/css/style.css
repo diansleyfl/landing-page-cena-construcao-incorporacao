@@ -202,20 +202,45 @@ section.chamada p {
     font-weight: normal;
 }
 
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    padding-top: 30%;
+}
+
+.item-2-mosaico {
+    background-color: #6d8bb4;
+    padding: 60px 30px;
+    width: 30%;
+}
+
+.item-2-mosaico p {
+    color: white;
+}
+
 /* 
 ----------------------------------------------------------
 -------------------------FOOTER---------------------------
 ---------------------------------------------------------- 
 */
 
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
 
+footer img {
+    width: 300px;
+}
 
-/* 
-----------------------------------------------------------
--------------------------EXTRAS---------------------------
----------------------------------------------------------- 
-*/
-
+footer p {
+    margin-top: 8px;
+}
 
 
 /* 
@@ -225,7 +250,7 @@ section.chamada p {
 */
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 1024px) {
 
     .bg {
         height: auto;
@@ -241,6 +266,23 @@ section.chamada p {
         display: inline-block;
     }
 
+}
+
+@media screen and (max-width: 768px) { 
+
+    .flex-mosaico {
+        display: block;
+    }
+
+    .item-1-mosaico {
+        width: 100%;
+        padding-top: 80%;
+    }
+
+    .item-2-mosaico {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 510px) {
